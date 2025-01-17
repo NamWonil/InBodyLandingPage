@@ -1,0 +1,123 @@
+.content4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 143px;
+	gap: 80px;
+	width: 100%;
+	background: #ffffff;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 40px;
+		width: 100%;
+
+		&__box1 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px;
+			gap: 32px;
+			width: 100%;
+			&__inner {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				padding: 0px;
+				gap: 24px;
+				width: 100%;
+
+				&__btn {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: center;
+					padding: 6.5px 16px;
+					background: #fbf3f5;
+					border-radius: 100px;
+					color: #cb4d61;
+					border: none;
+					font-family: 'Pretendard';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 20px;
+				}
+
+				&__text {
+					font-family: 'Pretendard';
+					font-style: normal;
+					font-weight: 600;
+					font-size: 32px;
+					line-height: 150%;
+					color: #1c1d21;
+				}
+			}
+
+			&__text {
+				width: 100%;
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 150%;
+				display: flex;
+				align-items: center;
+				color: #7b818f;
+			}
+		}
+		&__box2 {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 0px;
+			gap: 4px;
+			&__btn {
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 22px;
+				text-align: center;
+				color: #cb4d61;
+				border: none;
+				background-color: #ffffff;
+			}
+		}
+		&__img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+@media (max-width: 960px) {
+	.content4 {
+		padding: 40px 40px 160px;
+
+		&__wrapper {
+			&__box1 {
+				padding-top: 40px;
+				gap: 40px;
+			}
+		}
+	}
+}
+@media (max-width: 390px) {
+	.content4 {
+		padding: 60px 24px;
+		&__wrapper {
+			&__box1 {
+				&__inner {
+					&__text {
+						font-size: 24px;
+					}
+				}
+				&__text {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

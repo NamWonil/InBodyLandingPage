@@ -1,0 +1,252 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 120px 143px 160px;
+	gap: 100px;
+	width: 100%;
+
+	// background-image: url('@/assets/images/memberManagement/imgContent2.png');
+	// background-size: contain;
+	// background-position: center;
+	// background-repeat: no-repeat;
+	&__box1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0px;
+		gap: 80px;
+		width: 100%;
+
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 40px 0px 0px;
+			gap: 24px;
+			width: calc(440 / 1080 * 100%);
+			&__text1 {
+				// 회원 일괄 등록
+				width: 100%;
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 150%;
+				color: #7b818f;
+			}
+			&__text2 {
+				// 엑셀 업로드로 한 번에
+				width: 100%;
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 32px;
+				line-height: 150%;
+				color: #1c1d21;
+			}
+			&__text3 {
+				// 많은 회원을 한 번에 등록할 땐'엑셀로 일괄 추가하기' 기능을 활용해 보세요.
+				width: 100%;
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 150%;
+				color: #7b818f;
+			}
+		}
+		&__img {
+			width: calc(560 / 1080 * 100%);
+			height: auto;
+		}
+	}
+	&__box2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0px;
+		gap: 80px;
+		width: 100%;
+
+		&__img {
+			width: calc(560 / 1080 * 100%);
+			height: auto;
+		}
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 40px 0px 0px;
+			gap: 24px;
+			width: calc(440 / 1080 * 100%);
+
+			&__text1 {
+				//필터링
+				width: 100%;
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 150%;
+				color: #7b818f;
+			}
+			&__text2 {
+				// 조건에 맞는 회원 찾기
+				width: 100%;
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 32px;
+				line-height: 150%;
+				color: #1c1d21;
+			}
+			&__text3 {
+				// 다양한 필터링 조건을 설정하여, 필요한 회원을 빠르고 정확하게 찾을 수 있습니다.
+				width: 100%;
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 150%;
+				color: #7b818f;
+			}
+		}
+	}
+	&__box3 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0px;
+		gap: 80px;
+		width: 100%;
+		&__inner {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 40px 0px 0px;
+			gap: 24px;
+			width: calc(440 / 1080 * 100%);
+			&__text1 {
+				//표시항목 설정
+				width: 100%;
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 150%;
+				color: #7b818f;
+			}
+			&__text2 {
+				//원하는 핵심 정보만
+				width: 100%;
+
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 32px;
+				line-height: 150%;
+				color: #1c1d21;
+			}
+			&__text3 {
+				//회원정보 테이블을 커스터마이즈하여, 필요에 맞는 핵심 정보만 확인할 수 있습니다.
+				width: 100%;
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 150%;
+				color: #7b818f;
+			}
+		}
+		&__img {
+			width: calc(560 / 1080 * 100%);
+			height: auto;
+		}
+	}
+}
+@media (max-width: 960px) {
+	.wrapper {
+		padding: 100px 40px;
+		&__box1 {
+			gap: 60px;
+			width: 100%;
+			&__inner {
+				&__text1 {
+					font-size: 16px;
+				}
+				&__text2 {
+					font-size: 28px;
+				}
+				&__text3 {
+					font-size: 16px;
+				}
+			}
+		}
+		&__box2 {
+			gap: 60px;
+			width: 100%;
+			&__inner {
+				&__text1 {
+					font-size: 16px;
+				}
+				&__text2 {
+					font-size: 28px;
+				}
+				&__text3 {
+					font-size: 16px;
+				}
+			}
+		}
+		&__box3 {
+			gap: 60px;
+			width: 100%;
+			&__inner {
+				&__text1 {
+					font-size: 16px;
+				}
+				&__text2 {
+					font-size: 28px;
+				}
+				&__text3 {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 390px) {
+	.wrapper {
+		gap: 60px;
+		padding: 80px 24px 60px;
+		&__box1,
+		&__box2,
+		&__box3 {
+			flex-direction: column;
+			gap: 32px;
+			&__inner {
+				width: calc(280 / 342 * 100%);
+				&__text1 {
+					font-size: 16px;
+				}
+				&__text2 {
+					font-size: 28px;
+				}
+				&__text3 {
+					font-size: 16px;
+				}
+			}
+			&__img {
+				width: 100%;
+			}
+		}
+		&__box2 {
+			&__inner {
+				order: 1;
+			}
+			&__img {
+				order: 2;
+			}
+		}
+	}
+}

@@ -1,0 +1,233 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px 83px 80px;
+	gap: 80px;
+	width: 100%;
+	background: #1c1d21;
+	&__wrapper1 {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-bottom: 30px;
+		&__logo {
+			width: 82.44px;
+			height: 24px;
+		}
+
+		&__box {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: flex-end;
+			padding: 0px;
+			gap: 10.4%;
+			width: 52.2%;
+			&__text {
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 22px;
+				color: #ffffff;
+				cursor: pointer;
+				display: flex;
+				white-space: normal;
+				word-wrap: break-word;
+				word-break: break-word;
+				overflow-wrap: break-word;
+			}
+
+			&__inner {
+				display: flex;
+				flex-direction: row;
+				padding: 0px;
+				align-items: flex-start;
+				justify-content: flex-end;
+				gap: 11.9%;
+				width: 62.9%;
+				&__item {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					padding: 0px;
+					gap: 24px;
+					width: 40.5%;
+					&__title {
+						display: flex;
+						font-family: 'Pretendard';
+						font-style: normal;
+						font-weight: 500;
+						font-size: 16px;
+						line-height: 22px;
+						color: #ffffff;
+					}
+
+					&__children {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						padding: 0px;
+						gap: 8px;
+						/* 70px */
+						justify-content: space-between;
+						&__txt {
+							/* 56px */
+							font-family: 'Pretendard';
+							font-style: normal;
+							font-weight: 400;
+							font-size: 16px;
+							line-height: 22px;
+							color: #949aa8;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&__wrapper2 {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 24px;
+		/* 1200px */
+		width: 100%;
+		&__box1 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0px;
+			gap: 2px;
+			width: 100%;
+			&__inner1 {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				padding: 0px;
+				gap: 6px;
+				/* 323px */
+
+				&__txt {
+					/* 58px */
+					font-family: 'Pretendard';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 20px;
+					color: #7b818f;
+				}
+
+				&__img {
+					width: 1px;
+					height: 20px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+
+			&__inner2 {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				padding: 0px;
+				gap: 6px;
+				/* 245px */
+
+				&__txt {
+					/* 352px */
+					font-family: 'Pretendard';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 20px;
+					color: #7b818f;
+					display: flex;
+					text-align: center;
+				}
+
+				&__img {
+					width: 1px;
+					height: 20px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+
+			&__txt {
+				/* 352px */
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: #7b818f;
+				display: flex;
+			}
+		}
+
+		&__box2 {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 0px;
+			gap: 6px;
+			/* 198px */
+
+			&__txt {
+				/* 58px */
+				font-family: 'Pretendard';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 20px;
+				color: #ffffff;
+			}
+
+			&__img {
+				width: 1px;
+				height: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	}
+}
+@media (max-width: 390px) {
+	.footer {
+		padding: 80px 24px;
+		&__wrapper1 {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 60px;
+			&__box {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 40px;
+				&__inner {
+					flex-direction: column;
+					align-items: flex-start;
+					width: 98px;
+					gap: 40px;
+					&__item {
+						width: 100%;
+						gap: 24px;
+
+						&__children {
+							gap: 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

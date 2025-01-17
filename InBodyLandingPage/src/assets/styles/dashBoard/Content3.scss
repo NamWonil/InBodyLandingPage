@@ -1,0 +1,85 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 80px;
+	width: 100%;
+	background: #ffffff;
+	padding: 160px 143px;
+	&__box1 {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		gap: 24px;
+		width: 100%;
+
+		&__text1 {
+			// 실적 분석으로 비즈니스 전략 강화
+			text-align: center;
+			width: 100%;
+			min-height: 60px;
+			font-family: 'Pretendard';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 40px;
+			line-height: 150%;
+			text-align: center;
+			color: #1c1d21;
+		}
+		&__text2 {
+			/* 지점, 직원, 프로그램별 실적을 분석하여 개선이 필요한 부분을 진단하고, 비즈니스 전략을 세울 수 있습니다. */
+			width: 100%;
+			min-height: 54px;
+			font-family: 'Pretendard';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 150%;
+			text-align: center;
+			color: #7b818f;
+		}
+	}
+	&__box2 {
+		gap: 24px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+		&__img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+@media (max-width: 960px) {
+	.wrapper {
+		padding: 80px 24px;
+		gap: 80px;
+		&__box2 {
+			&__img {
+				width: calc(800 / 912 * 100%);
+			}
+		}
+	}
+}
+@media (max-width: 390px) {
+	.wrapper {
+		gap: 40px;
+		&__box1 {
+			&__text1 {
+				font-size: 28px;
+			}
+			&__text2 {
+				font-size: 16px;
+			}
+		}
+		&__box2 {
+			gap: 7px;
+			&__img {
+				width: 100%;
+			}
+		}
+	}
+}
