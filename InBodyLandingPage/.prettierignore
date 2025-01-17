@@ -1,0 +1,5 @@
+distdules
+.env
+.prettierrc
+node_modules
+.eslintignore
