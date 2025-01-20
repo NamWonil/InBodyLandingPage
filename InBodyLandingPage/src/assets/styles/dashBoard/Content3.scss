@@ -55,11 +55,11 @@
 }
 @media (max-width: 960px) {
 	.wrapper {
-		padding: 80px 24px;
+		padding: 100px 80px;
 		gap: 80px;
 		&__box2 {
 			&__img {
-				width: calc(800 / 912 * 100%);
+				width: 100%;
 			}
 		}
 	}

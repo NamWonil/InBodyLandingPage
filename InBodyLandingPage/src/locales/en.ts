@@ -27,24 +27,17 @@ export default {
 
 	//#region content
 	// Content1
-	content1Text: `Better data, better health. Manage your client's health journey with our powerful cloud solution. 
-	From body composition analysis, personalized consultations, and effective data management
-	—all accessible anytime, anywhere.`,
+	content1Text: `Better data, better health. Manage your client's health journey with our powerful cloud solution. From body composition analysis, personalized consultations, and effective data management —all accessible anytime, anywhere.`,
 	// Content2
 	content2Text1: `Built on over a 
 	100 million data points`,
-	content2Text2: `Transform your client consultations with LookinBody. 
-Get the data and insights you need to drive results.`,
+	content2Text2: `Transform your client consultations with LookinBody. a and insights you need to drive results.`,
 	content2ItemTitle1: 'Measurement',
 	content2ItemTxt1: 'Body Composition Analysis',
-	content2ItemTxt2: `Powered by InBody technology, LookinBody delivers precise
-	 body measurements for valuable health insights and
-	  personalized recommendations.`,
+	content2ItemTxt2: `Powered by InBody technology, LookinBody delivers precise body measurements for valuable health insights and personalized recommendations.`,
 	content2ItemTitle2: 'Cloud integration',
 	content2ItemTxt3: 'LB Cloud Integration',
-	content2ItemTxt4: `Powered by InBody technology, LookinBody delivers precise
-	 body measurements for valuable health insights and
-	  personalized recommendations.`,
+	content2ItemTxt4: `Powered by InBody technology, LookinBody delivers precise body measurements for valuable health insights and  personalized recommendations.`,
 	content2ItemTitle3: 'Consultation',
 	content2ItemTxt5: 'Accurate Insights for Expert Consultations',
 	content2ItemTxt6: `InBody's detailed Health Report empowers you to deliver accurate and impactful consultations.`,
@@ -55,9 +48,7 @@ Get the data and insights you need to drive results.`,
 		{
 			title: 'Measurement',
 			txt1: 'Body Composition Analysis',
-			txt2: `Powered by InBody technology, LookinBody delivers precise
-	 body measurements for valuable health insights and
-	  personalized recommendations.`,
+			txt2: `Powered by InBody technology, LookinBody delivers precise body measurements for valuable health insights and personalized recommendations.`,
 			img: new URL('@/assets/images/home/img1Content2.png', import.meta.url)
 				.href,
 			img960: new URL(
@@ -72,9 +63,7 @@ Get the data and insights you need to drive results.`,
 		{
 			title: 'Cloud integration',
 			txt1: 'LB Cloud Integration',
-			txt2: `Powered by InBody technology, LookinBody delivers precise
-	 body measurements for valuable health insights and
-	  personalized recommendations.`,
+			txt2: `Powered by InBody technology, LookinBody delivers precise body measurements for valuable health insights and personalized recommendations.`,
 			img: new URL('@/assets/images/home/img2Content2.png', import.meta.url)
 				.href,
 			img960: new URL(
@@ -121,14 +110,12 @@ Get the data and insights you need to drive results.`,
 	content3Text1: 'InBody Sync',
 	content3Text2: `Save Time with 
 Automatic Data Synchronization.`,
-	content3Text3: `Experience seamless health data management 
-with InBody's real-time cloud sync.`,
+	content3Text3: `Experience seamless health data management with InBody's real-time cloud sync.`,
 
 	// Content4
 	content4Text1: 'Member Management',
 	content4Text2: `Member management made easy`,
-	content4Text3: `Transform complex member registration and management into a seamless process, 
-and solve it effortlessly today.`,
+	content4Text3: `Transform complex member registration and management into a seamless process, and solve it effortlessly today.`,
 	content4Text4: 'Member Management',
 	content4Img: new URL(
 		'@/assets/images/home/imgContent4_en.png',
@@ -154,9 +141,7 @@ in one place.`,
 	// Content6
 	content6Text1: 'ROI Impact',
 	content6Text2: `Unlock the power of your data.`,
-	content6Text3: `Our comprehensive reports provide valuable insights into overall usage, performance trends, 
-demographic breakdowns, and key rankings.  
-Filter data by custom groups to zero in on specific areas and drive targeted results.`,
+	content6Text3: `Our comprehensive reports provide valuable insights into overall usage, performance trends, demographic breakdowns, and key rankings. Filter data by custom groups to zero in on specific areas and drive targeted results.`,
 	content6Text4: 'Dashboard',
 	content6Img: new URL(
 		'@/assets/images/home/imgContent6_en.png',
@@ -170,15 +155,12 @@ Filter data by custom groups to zero in on specific areas and drive targeted res
 	content7Text1: 'Security',
 	content7Text2: `Committed to Your
 	 Information Security`,
-	content7Text3: `LookinBody is certified for data security and meets the highest
-	 international standards for information security and privacy
-	  management.`,
+	content7Text3: `LookinBody is certified for data security and meets the highest international standards for information security and privacy management.`,
 
 	// Content8
 	content8Text1: 'Connect service',
 	content8Text2: `InBody Touch`,
-	content8Text3: `Understand Your Health Better: Our interactive kiosk brings your results to life, 
-offering self-guided exploration and enhanced consultations.`,
+	content8Text3: `Understand Your Health Better: Our interactive kiosk brings your results to life, offering self-guided exploration and enhanced consultations.`,
 	content8Text4: 'Learn More',
 	content8Img: new URL(
 		'@/assets/images/home/imgContent8_en.png',
@@ -189,8 +171,7 @@ offering self-guided exploration and enhanced consultations.`,
 		import.meta.url
 	).href,
 	// Content9
-	content9Text1: `Explore more detailed features 
-		through our service introduction.`,
+	content9Text1: `Explore more detailed features through our service introduction.`,
 	content9Text2: `Download`,
 	content9Text3: `LookinBody`,
 	content9Text4: 'Service Introduction',
@@ -198,13 +179,11 @@ offering self-guided exploration and enhanced consultations.`,
 
 	// Content10
 	content10Text1: 'Try it free today!',
-	content10Text2: `Experience the LookinBody advantage with seamless InBody connectivity and powerful insights, 
-all for less than your daily coffee fix.`,
+	content10Text2: `Experience the LookinBody advantage with seamless InBody connectivity and powerful insights, all for less than your daily coffee fix.`,
 	content10Text3: 'Inquiry',
 	content10Text4: 'Start for free',
 	content10Text5: 'Do you own an InBody device?',
-	content10Text6: `Enhance customer consultations with the new InBody Touch!
-	Provide personalized analysis and real-time feedback based on data, clearly suggesting health goals for your customers.`,
+	content10Text6: `Enhance customer consultations with the new InBody Touch! Provide personalized analysis and real-time feedback based on data, clearly suggesting health goals for your customers.`,
 	//#endregion content
 
 	//#region Content11
@@ -320,8 +299,7 @@ all for less than your daily coffee fix.`,
 in one place.`,
 	healthReportText2: `With the ability to connect and manage various health data in one place, it allows for more convenient and efficient health management.`,
 	healthReportText3: `Captivating Health Report for Customers`,
-	healthReportText4: `Based on accurate data analysis and customized information, 
-	we provide our customers with professional and reliable counseling experience.`,
+	healthReportText4: `Based on accurate data analysis and customized information, we provide our customers with professional and reliable counseling experience.`,
 	healthReportContent3: [
 		{
 			title: 'Comprehensive evaluation',
@@ -381,10 +359,8 @@ in one place.`,
 		'@/assets/images/dashBoard/imgContent1_en.png',
 		import.meta.url
 	).href,
-	dashBoardText2: `Gather only the data that needs to be seen
-	Systematically`,
-	dashBoardText3: `Based on accurate data analysis and personalized information,
-	we provide our customers with professional and reliable counseling experience.`,
+	dashBoardText2: `Gather only the data that needs to be seen Systematically`,
+	dashBoardText3: `Based on accurate data analysis and personalized information, we provide our customers with professional and reliable counseling experience.`,
 	dashBoardContent2: [
 		{
 			title: 'Member statistics',
@@ -494,8 +470,7 @@ in one place.`,
 		{
 			title: 'Member Batch Registration',
 			subTitle: 'all at once with Excel upload',
-			content: `When registering many members at once, try using
-			 the 'Bulk Add with Excel' feature.`,
+			content: `When registering many members at once, try using the 'Bulk Add with Excel' feature.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent2_1_en.png',
 				import.meta.url
@@ -512,8 +487,7 @@ in one place.`,
 		{
 			title: 'Filtering',
 			subTitle: 'Finding members that meet the criteria',
-			content: `By setting various filtering conditions, you can quickly
-			 and accurately find the necessary members.`,
+			content: `By setting various filtering conditions, you can quickly and accurately find the necessary members.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent2_2_en.png',
 				import.meta.url
@@ -530,8 +504,7 @@ in one place.`,
 		{
 			title: 'Display item settings',
 			subTitle: 'Only desired key information.',
-			content: `You can customize the member information table to
-			 view only essential information according to your needs. `,
+			content: `You can customize the member information table to view only essential information according to your needs. `,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent2_3_en.png',
 				import.meta.url
@@ -546,16 +519,12 @@ in one place.`,
 			).href
 		}
 	],
-	memberManagementText3: `Communicate easily and conveniently 
-	with members.`,
-	memberManagementText4: `Within the LookinBody service, messages can easily be sent to members through various channels 
-	such as email, chat, and push notifications on the inbody app.`,
+	memberManagementText3: `Communicate easily and conveniently with members.`,
+	memberManagementText4: `Within the LookinBody service, messages can easily be sent to members through various channels such as email, chat, and push notifications on the inbody app.`,
 	memberManagementContent3: [
 		{
 			title: 'Sending InBody results: Sharing personalized data',
-			content: `The results based on health data analyzed by in-body
-			 equipment are provided in real-time to support
-			  personalized health management.`,
+			content: `The results based on health data analyzed by in-body equipment are provided in real-time to support  personalized health management.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent3_1_en.png',
 				import.meta.url
@@ -570,11 +539,8 @@ in one place.`,
 			).href
 		},
 		{
-			title: `Systematic Diet Management: AI-based
-			 Solution`,
-			content: `With AI-based nutritional plans, we can
-			 systematically support members in achieving their
-			  health goals.`,
+			title: `Systematic Diet Management: AI-based Solution`,
+			content: `With AI-based nutritional plans, we can systematically support members in achieving their  health goals.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent3_2_en.png',
 				import.meta.url
@@ -590,9 +556,7 @@ in one place.`,
 		},
 		{
 			title: 'Explanation Materials: Article Submission',
-			content: `We share the latest health information and expert
-			 content through the InBody app to increase
-			  members' understanding and satisfaction.`,
+			content: `We share the latest health information and expert content through the InBody app to increase  members' understanding and satisfaction.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent3_3_en.png',
 				import.meta.url
@@ -608,9 +572,7 @@ in one place.`,
 		},
 		{
 			title: 'App push notification',
-			content: `Easily send customized promotion messages to
-			 clients and support them in allowing members to 
-			 view them immediately on their smartphones.`,
+			content: `Easily send customized promotion messages to clients and support them in allowing members to  view them immediately on their smartphones.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent3_4_en.png',
 				import.meta.url
@@ -632,8 +594,7 @@ in one place.`,
 	inBodyTouchText1: 'InBody Kiosk for Efficient Consultations',
 	inBodyTouchText2Front: 'With over  ',
 	inBodyTouchText2Red: '150 million',
-	inBodyTouchText2: `  health data points,
-	you can easily and accurately provide optimal health consultations to your customers.`,
+	inBodyTouchText2: `  health data points, you can easily and accurately provide optimal health consultations to your customers.`,
 	inBodyTouchImgContent1: new URL(
 		'@/assets/images/InBodyTouch/imgContent1_en.png',
 		import.meta.url

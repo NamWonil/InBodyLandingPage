@@ -6,7 +6,7 @@
 	align-items: center;
 	padding: 100px 143px 160px;
 	gap: 80px;
-	background: #ffffff;
+	background: linear-gradient(180deg, #ffffff 0%, #eeeff3 100%), #ffffff;
 
 	&__wrapper1 {
 		display: flex;
@@ -53,9 +53,9 @@
 			/* 520px */
 			width: 100%;
 			/* 429px */
-
+			background-color: #ffffff;
 			border: 1px solid #eeeff3;
-			filter: drop-shadow(0px 0px 40px rgba(28, 29, 33, 0.04));
+
 			border-radius: 16px;
 			&__img {
 				width: 100%;
@@ -118,12 +118,9 @@
 }
 @media (max-width: 960px) {
 	.content2 {
-		padding: 136px 40px 80px;
+		padding: 160px 40px 80px;
 		&__wrapper2 {
 			@media (max-width: 960px) {
-				display: flex;
-				flex-direction: column;
-				gap: 40px;
 			}
 		}
 	}

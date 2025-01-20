@@ -9,9 +9,7 @@
                 </div>
                 <p class="content3__wrapper__box1__txt">{{ $t('content3Text3') }}</p>
             </div>
-            <img class="content3__wrapper__img"
-                :src="isNarrow ? '/src/assets/images/home/imgContent3_390.png' : '/src/assets/images/home/imgContent3.png'"
-                alt="content3">
+            <img class="content3__wrapper__img" :src='isNarrow ? imgContent3_390 : imgContent3' alt="content3">
         </div>
     </div>
 </template>
@@ -19,6 +17,8 @@
 import { onMounted, ref, inject } from 'vue';
 const scrollElement = ref(null);
 const isNarrow = inject('isNarrow');
+const imgContent3 = new URL('@/assets/images/home/imgContent3.png', import.meta.url).href;
+const imgContent3_390 = new URL('@/assets/images/home/imgContent3_390.png', import.meta.url).href;
 onMounted(() => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {

@@ -2,7 +2,6 @@
     <div class="app">
         <Home />
     </div>
-
 </template>
 <script lang="ts" setup name="App">
 import Home from './pages/homePage/Home.vue';

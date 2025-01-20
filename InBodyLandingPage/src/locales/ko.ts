@@ -29,17 +29,14 @@ export default {
 
 	//#region content
 	// Content1
-	content1Text: `클라우드 기반 솔루션을 통해 체성분 분석부터 맞춤형 건강 상담까지,
-	언제 어디서나 회원의 건강 데이터를 효율적으로 관리할 수 있도록 지원합니다.`,
+	content1Text: `클라우드 기반 솔루션을 통해 체성분 분석부터 맞춤형 건강 상담까지, 언제 어디서나 회원의 건강 데이터를 효율적으로 관리할 수 있도록 지원합니다.`,
 	// Content2
 	content2Text1: `LookinBody와 함께하는
         맞춤형 건강 관리 솔루션`,
-	content2Text2: `정확한 데이터와 전문적인 인사이트를 통해 건강 관리의 새로운 기준을 제시합니다.
-		체성분 분석부터 상담, 사후 관리까지, LookinBody가 고객의 건강 목표 달성을 돕습니다.`,
+	content2Text2: `정확한 데이터와 전문적인 인사이트를 통해 건강 관리의 새로운 기준을 제시합니다. 체성분 분석부터 상담, 사후 관리까지, LookinBody가 고객의 건강 목표 달성을 돕습니다.`,
 	content2ItemTitle1: 'Measurement',
 	content2ItemTxt1: '체성분 측정',
-	content2ItemTxt2: `InBody 장비와 LookinBody는 정밀한 체성분 분석을 통해
-	가치 있는 건강 인사이트와 맞춤형 권장사항을 제공합니다.`,
+	content2ItemTxt2: `InBody 장비와 LookinBody는 정밀한 체성분 분석을 통해 가치 있는 건강 인사이트와 맞춤형 권장사항을 제공합니다.`,
 	content2ItemTitle2: 'Cloud integration',
 	content2ItemTxt3: 'LB 클라우드 통합',
 	content2ItemTxt4: `LookinBody 클라우드와 원활하게 통합하여 데이터를 저장하고 분석함으로써 효율적인 추적 및 관리를 가능하게 합니다.`,
@@ -48,14 +45,12 @@ export default {
 	content2ItemTxt6: `전문가들은 InBody의 상세한 지원을 통해 정확한 상담을 제공합니다.`,
 	content2ItemTitle4: 'After care',
 	content2ItemTxt7: '정기적인 사후 관리',
-	content2ItemTxt8: `지속적인 사후 관리를 통해 사용자는 건강 개선을 유지하고
-	 장기적인 건강 목표를 달성할 수 있습니다.`,
+	content2ItemTxt8: `지속적인 사후 관리를 통해 사용자는 건강 개선을 유지하고 장기적인 건강 목표를 달성할 수 있습니다.`,
 	content2: [
 		{
 			title: 'Measurement',
 			txt1: '체성분 측정',
-			txt2: `InBody 장비와 LookinBody는 정밀한 체성분 분석을 통해
-	가치 있는 건강 인사이트와 맞춤형 권장사항을 제공합니다.`,
+			txt2: `InBody 장비와 LookinBody는 정밀한 체성분 분석을 통해 가치 있는 건강 인사이트와 맞춤형 권장사항을 제공합니다.`,
 			img: new URL('@/assets/images/home/img1Content2.png', import.meta.url)
 				.href,
 			img960: new URL(
@@ -100,8 +95,7 @@ export default {
 		{
 			title: 'After care',
 			txt1: '정기적인 사후 관리',
-			txt2: `지속적인 사후 관리를 통해 사용자는 건강 개선을 유지하고
-	 장기적인 건강 목표를 달성할 수 있습니다.`,
+			txt2: `지속적인 사후 관리를 통해 사용자는 건강 개선을 유지하고 장기적인 건강 목표를 달성할 수 있습니다.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent3_4_ko.png',
 				import.meta.url
@@ -120,8 +114,7 @@ export default {
 	content3Text1: '데이터 자동 연동',
 	content3Text2: `입력할 필요 없이 
 		자동으로 연동되는 데이터`,
-	content3Text3: `클라우드를 통해 인바디 기기와 실시간으로 연동하여 
-		회원의 건강 데이터를 자동으로 동기화하고 통합 관리합니다.`,
+	content3Text3: `클라우드를 통해 인바디 기기와 실시간으로 연동하여 회원의 건강 데이터를 자동으로 동기화하고 통합 관리합니다.`,
 	// Content4
 	content4Text1: '회원 관리',
 	content4Text2: `회원 등록과 관리를 
@@ -141,8 +134,7 @@ export default {
 	content5Text1: '헬스리포트',
 	content5Text2: `InBody의 모든 건강 데이터를
 		한 곳에서`,
-	content5Text3: `회원의 건강 데이터를 체계적으로
-		관리하고, 각 회원에게 맞춤형 건강 솔루션을 제공합니다.`,
+	content5Text3: `회원의 건강 데이터를 체계적으로 관리하고, 각 회원에게 맞춤형 건강 솔루션을 제공합니다.`,
 	content5Img: new URL(
 		'@/assets/images/home/imgContent5_ko.png',
 		import.meta.url
@@ -155,8 +147,7 @@ export default {
 	content6Text1: '비즈니스 성과',
 	content6Text2: `그룹별 변화 중심의
 		맞춤관리`,
-	content6Text3: `세분화된 맞춤 관리로 그룹별 강점을 강화하고,
-		변화에 맞춘 최적의 성과를 이끌어냅니다.`,
+	content6Text3: `세분화된 맞춤 관리로 그룹별 강점을 강화하고, 변화에 맞춘 최적의 성과를 이끌어냅니다.`,
 	content6Text4: '대시보드',
 	content6Img: new URL(
 		'@/assets/images/home/imgContent6_ko.png',
@@ -170,8 +161,7 @@ export default {
 	content7Text1: '보안',
 	content7Text2: `개인정보도
 	 걱정 없이`,
-	content7Text3: `LookinBody는 정보보호 및 개인정보보호 관리체계에 대한 국제 표준이자 권위
-	 있는 국제 인증을 취득했습니다.
+	content7Text3: `LookinBody는 정보보호 및 개인정보보호 관리체계에 대한 국제 표준이자 권위 있는 국제 인증을 취득했습니다.
 `,
 
 	// Content8
@@ -198,13 +188,11 @@ export default {
 
 	// Content10
 	content10Text1: '아직도 망설여지시나요?',
-	content10Text2: `LookinBody 데모를 저렴한 비용으로 체험해 보세요.
-		인바디 장비도 함께 지원해 드리니, 한 번 체험해 보시고 결정하세요.`,
+	content10Text2: `LookinBody 데모를 저렴한 비용으로 체험해 보세요. 인바디 장비도 함께 지원해 드리니, 한 번 체험해 보시고 결정하세요.`,
 	content10Text3: '문의하기',
 	content10Text4: '무료로 시작하기',
 	content10Text5: '인바디 기기를 보유하고 계시나요?',
-	content10Text6: `InBody Touch 신제품으로 고객 상담을 더 효과적으로 진행해보세요!
-	데이터를 기반으로 맞춤형 분석과 실시간 피드백을 제공하며, 고객의 건강 목표를 명확히 제안할 수 있습니다.`,
+	content10Text6: `InBody Touch 신제품으로 고객 상담을 더 효과적으로 진행해보세요! 데이터를 기반으로 맞춤형 분석과 실시간 피드백을 제공하며, 고객의 건강 목표를 명확히 제안할 수 있습니다.`,
 	//#endregion Content
 
 	//#region Content11
@@ -319,17 +307,14 @@ export default {
 		import.meta.url
 	).href,
 	healthReportTitle2: '한 곳에 모이는 건강 데이터',
-	healthReportText2: `다양한 건강 데이터를 한 곳에서 연결하고 관리할 수 있어,
-더욱 편리하고 효율적인 건강 관리가 가능합니다.`,
+	healthReportText2: `다양한 건강 데이터를 한 곳에서 연결하고 관리할 수 있어, 더욱 편리하고 효율적인 건강 관리가 가능합니다.`,
 	healthReportText3: `고객의 눈을 사로잡는
 	 헬스리포트`,
-	healthReportText4: `정확한 데이터 분석과 맞춤형 정보를 바탕으로,
-                고객에게 전문적이고 신뢰성 있는 상담 경험을 제공합니다.`,
+	healthReportText4: `정확한 데이터 분석과 맞춤형 정보를 바탕으로, 고객에게 전문적이고 신뢰성 있는 상담 경험을 제공합니다.`,
 	healthReportContent3: [
 		{
 			title: '종합 평가',
-			content: `고객의 현재 건강 상태를 종합적으로 파악하고,
-			개선이 필요한 항목을 강조합니다.`,
+			content: `고객의 현재 건강 상태를 종합적으로 파악하고, 개선이 필요한 항목을 강조합니다.`,
 			img: new URL(
 				'@/assets/images/healthReport/imgContent3_1_ko.png',
 				import.meta.url
@@ -353,8 +338,7 @@ export default {
 		},
 		{
 			title: '또래 비교',
-			content: `같은 성별, 연령대와 비교된 데이터를 제공하여  고객이 자신의
-			 건강 수준을 인식하고 동기를 얻을 수 있도록 돕습니다.`,
+			content: `같은 성별, 연령대와 비교된 데이터를 제공하여  고객이 자신의 건강 수준을 인식하고 동기를 얻을 수 있도록 돕습니다.`,
 			img: new URL(
 				'@/assets/images/healthReport/imgContent3_3_ko.png',
 				import.meta.url
@@ -366,8 +350,7 @@ export default {
 		},
 		{
 			title: '변화 모니터링',
-			content: `고객이 꾸준히 건강 목표에 가까워질 수 있도록,
-			진행 상황을 모니터링하고 성과를 시각화합니다.`,
+			content: `고객이 꾸준히 건강 목표에 가까워질 수 있도록, 진행 상황을 모니터링하고 성과를 시각화합니다.`,
 			img: new URL(
 				'@/assets/images/healthReport/imgContent3_4_ko.png',
 				import.meta.url
@@ -387,10 +370,8 @@ export default {
 		'@/assets/images/dashBoard/imgContent1_ko.png',
 		import.meta.url
 	).href,
-	dashBoardText2: `봐야 할 데이터만 모아
-                체계적으로`,
-	dashBoardText3: `정확한 데이터 분석과 맞춤형 정보를 바탕으로,
-                고객에게 전문적이고 신뢰성 있는 상담 경험을 제공합니다.`,
+	dashBoardText2: `봐야 할 데이터만 모아 체계적으로`,
+	dashBoardText3: `정확한 데이터 분석과 맞춤형 정보를 바탕으로, 고객에게 전문적이고 신뢰성 있는 상담 경험을 제공합니다.`,
 	dashBoardContent2: [
 		{
 			title: '회원 통계',
@@ -482,7 +463,7 @@ export default {
 	//#region memberManagement
 	memberManagementTitle: '회원 관리가 쉬워집니다',
 	memberManagementText1:
-		' 간편한 시스템으로 회원 관리의 부담을 줄이고, 생산성은 향상시켰어요.',
+		'간편한 시스템으로 회원 관리의 부담을 줄이고, 생산성은 향상시켰어요.',
 	memberManagementText2: '번거로운 회원 등록과 관리, 이제 간편하게 해결하세요.',
 	memberManagementImgContent1: new URL(
 		'@/assets/images/memberManagement/imgContent1_ko.png',
@@ -492,8 +473,7 @@ export default {
 		{
 			title: '회원 일괄 등록',
 			subTitle: '엑셀 업로드로 한 번에',
-			content: `많은 회원을 한 번에 등록할 땐
-			 엑셀로 일괄 추가하기 기능을 활용해 보세요.`,
+			content: `많은 회원을 한 번에 등록할 땐 엑셀로 일괄 추가하기 기능을 활용해 보세요.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent2_1_ko.png',
 				import.meta.url
@@ -510,8 +490,7 @@ export default {
 		{
 			title: '필터링',
 			subTitle: '조건에 맞는 회원 찾기',
-			content: `다양한 필터링 조건을 설정하여,
-			필요한 회원을 빠르고 정확하게 찾을 수 있습니다.`,
+			content: `다양한 필터링 조건을 설정하여, 필요한 회원을 빠르고 정확하게 찾을 수 있습니다.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent2_2_ko.png',
 				import.meta.url
@@ -528,8 +507,7 @@ export default {
 		{
 			title: '표시항목 설정',
 			subTitle: '원하는 핵심 정보만',
-			content: `회원정보 테이블을 커스터마이즈하여,
-			필요에 맞는 핵심 정보만 확인할 수 있습니다.`,
+			content: `회원정보 테이블을 커스터마이즈하여, 필요에 맞는 핵심 정보만 확인할 수 있습니다.`,
 			img: new URL(
 				'@/assets/images/memberManagement/imgContent2_3_ko.png',
 				import.meta.url
@@ -547,8 +525,7 @@ export default {
 
 	memberManagementText3: `쉽고 간편하게
 	회원과 소통하기`,
-	memberManagementText4: `LookinBody 서비스 내에서 메일, 채팅, 인바디 앱 푸시 등
-	회원에게 손쉽게 메시지를 발송할 수 있습니다.`,
+	memberManagementText4: `LookinBody 서비스 내에서 메일, 채팅, 인바디 앱 푸시 등 회원에게 손쉽게 메시지를 발송할 수 있습니다.`,
 	memberManagementContent3: [
 		{
 			title: '인바디 결과지 전송: 맞춤형 데이터 공유',
@@ -622,8 +599,7 @@ export default {
 	// inBodyTouchTitle: 'InBody Touch',
 	inBodyTouchText1: '효율적인 고객상담을 위한 인바디 키오스크',
 	inBodyTouchText2Red: '1억 5천 건 이상',
-	inBodyTouchText2: `의 건강 데이터를 활용하여
-쉽고 정확하게 고객에게 최적의 건강 상담을 제공할 수 있습니다.`,
+	inBodyTouchText2: `의 건강 데이터를 활용하여 쉽고 정확하게 고객에게 최적의 건강 상담을 제공할 수 있습니다.`,
 	inBodyTouchImgContent1: new URL(
 		'@/assets/images/InBodyTouch/imgContent1_ko.png',
 		import.meta.url
@@ -649,8 +625,7 @@ export default {
 		{
 			title: '빅데이터 기반 고객 상태 분석',
 			subTitle: '연령별 평균 데이터와 비교하여 상담해요',
-			content: `고객과 비슷한 연령대의 데이터를 활용하여 체성분 상태를 
-			비교하고 개선 방향을 제시할 수 있습니다.`,
+			content: `고객과 비슷한 연령대의 데이터를 활용하여 체성분 상태를 비교하고 개선 방향을 제시할 수 있습니다.`,
 			img: new URL(
 				'@/assets/images/InBodyTouch/imgContent2_2_ko.png',
 				import.meta.url
@@ -667,8 +642,7 @@ export default {
 		{
 			title: '회원 일괄 등록',
 			subTitle: '엑셀 업로드로 한 번에',
-			content: `많은 회원을 한 번에 등록할 땐
-			 엑셀로 일괄 추가하기 기능을 활용해 보세요.`,
+			content: `많은 회원을 한 번에 등록할 땐 엑셀로 일괄 추가하기 기능을 활용해 보세요.`,
 			img: new URL(
 				'@/assets/images/InBodyTouch/imgContent2_3.png',
 				import.meta.url
@@ -685,8 +659,7 @@ export default {
 	],
 	inBodyTouchText3: `LookinBody 연동 제품 추천`,
 	inBodyTouchText4: `비즈니스 성장의 새로운 기회`,
-	inBodyTouchText5: `LookinBody에 제품을 등록하면 고객의 체성분 데이터를 분석해 적합한 제품을 자동으로 추천합니다.
-개인 맞춤형 제안으로 고객 만족도를 높이고, 비즈니스 기회를 확장하세요.`,
+	inBodyTouchText5: `LookinBody에 제품을 등록하면 고객의 체성분 데이터를 분석해 적합한 제품을 자동으로 추천합니다. 개인 맞춤형 제안으로 고객 만족도를 높이고, 비즈니스 기회를 확장하세요.`,
 	inBodyTouchImgContent3: new URL(
 		'@/assets/images/InBodyTouch/imgContent3_ko.png',
 		import.meta.url

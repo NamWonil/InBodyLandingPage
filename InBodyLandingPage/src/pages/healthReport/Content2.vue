@@ -7,14 +7,14 @@
             </p>
 
         </div>
-        <img :src="isNarrow ? '/src/assets/images/healthReport/imgContent2_ko_390.png' : '/src/assets/images/healthReport/imgContent2_ko.png'"
-            alt="healthReport" class="wrapper__box__img">
+        <img :src='isNarrow ? imgContent2_390 : imgContent2' alt="healthReport" class="wrapper__box__img">
     </div>
 </template>
 <script lang="ts" setup name="Content2">
 import { inject } from 'vue';
 const isNarrow = inject('isNarrow', false);
-
+const imgContent2 = new URL('@/assets/images/healthReport/imgContent2_ko.png', import.meta.url).href;
+const imgContent2_390 = new URL('@/assets/images/healthReport/imgContent2_ko_390.png', import.meta.url).href;
 
 </script>
 <style lang="scss" scoped>

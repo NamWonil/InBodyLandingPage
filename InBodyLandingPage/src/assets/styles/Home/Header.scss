@@ -19,6 +19,7 @@
 		border-bottom: 1px solid #e2e4e9;
 		position: fixed;
 		z-index: 99;
+		padding: 18px 83px;
 		background-color: #fff;
 		&__top {
 			background-color: #2e1f21;
@@ -103,7 +104,6 @@
 
 		&__bottom {
 			width: 100%;
-			height: 72px;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
@@ -114,8 +114,7 @@
 				flex-direction: row;
 				justify-content: space-between;
 				align-items: center;
-				padding: 0;
-				width: 87.8%;
+				width: 100%;
 				&__section1 {
 					display: flex;
 					flex-direction: row;
@@ -557,6 +556,7 @@ button:hover {
 @media (max-width: 960px) {
 	.banner {
 		&__wrapper {
+			padding: 12px 24px;
 			&__bottom {
 				&__box {
 					&__section1 {
