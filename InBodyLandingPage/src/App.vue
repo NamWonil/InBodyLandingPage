@@ -10,11 +10,11 @@ const isNarrow = ref(false);
 const isTablet = ref(false);
 const updateScreenWidth = () => {
 
-    if (window.innerWidth <= 390) {
+    if (window.innerWidth < 960) {
         isNarrow.value = true;
         isTablet.value = false;
         console.log(isNarrow.value);
-    } else if (window.innerWidth <= 960) {
+    } else if (window.innerWidth < 1366) {
         isTablet.value = true;
         isNarrow.value = false;
         console.log(isTablet.value);
