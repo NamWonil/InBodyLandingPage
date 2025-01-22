@@ -12,7 +12,7 @@
                 <button class="content4__wrapper__box2__btn" @click="goToMemberManagement">{{ $t('content4Text1')
                     }}</button>
                 <img class="content4__wrapper__box2__img" src="@/assets/images/home/right-large.svg" alt="Icon"
-                    style="width: 1.17vw;height: 100%;">
+                    style="width: 16px;height: auto;">
             </div>
             <img :src="isNarrow ? $t('content4Img390') : $t('content4Img')" alt="content4"
                 class="content4__wrapper__img">

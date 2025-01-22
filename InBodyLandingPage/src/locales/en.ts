@@ -660,7 +660,7 @@ in one place.`,
 		import.meta.url
 	).href,
 	inBodyTouchImgContent3_960: new URL(
-		'@/assets/images/InBodyTouch/imgContent3_ko_960.png',
+		'@/assets/images/InBodyTouch/imgContent3_en_960.png',
 		import.meta.url
 	).href,
 	inBodyTouchImgContent3_390: new URL(

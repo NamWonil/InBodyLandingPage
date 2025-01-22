@@ -12,7 +12,7 @@
                 <button class="content5__wrapper__box2__btn" @click="goToHealthReport">{{ $t('content5Text1')
                     }}</button>
                 <img class="content5__wrapper__box2__img" src="@/assets/images/home/right-large.svg" alt="Icon"
-                    style="width: 1.17vw;height: 100%;">
+                    style="width: 16px;height: auto;">
             </div>
             <img :src="isNarrow ? $t('content5Img390') : $t('content5Img')" alt="content5"
                 class="content5__wrapper__img">
