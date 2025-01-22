@@ -95,7 +95,7 @@
 .enFont {
 	font-family: 'Montserra';
 }
-@media (max-width: 960px) {
+@media (min-width: 960px) and (max-width: 1365px) {
 	.content1 {
 		padding: 120px 40px 100px;
 		&__wrapper {
@@ -107,7 +107,7 @@
 		}
 	}
 }
-@media (max-width: 390px) {
+@media (max-width: 959px) {
 	.content1 {
 		padding: 132px 24px;
 		&__wrapper {

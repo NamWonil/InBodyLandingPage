@@ -94,7 +94,7 @@
 		}
 	}
 }
-@media (max-width: 960px) {
+@media (min-width: 960px) and (max-width: 1366px) {
 	.wrapper {
 		padding: 153px 40px 160px;
 		&__box2 {
@@ -102,7 +102,7 @@
 		}
 	}
 }
-@media (max-width: 390px) {
+@media (max-width: 959px) {
 	.wrapper {
 		padding: 133px 24px;
 		gap: 32px;

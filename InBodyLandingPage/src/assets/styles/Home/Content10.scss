@@ -86,7 +86,7 @@
 		}
 	}
 }
-@media (max-width: 960px) {
+@media (min-width: 960px) and (max-width: 1366px) {
 	.content10 {
 		&__wrapper2 {
 			&__button1 {
@@ -95,7 +95,7 @@
 		}
 	}
 }
-@media (max-width: 390px) {
+@media (max-width: 959px) {
 	.content10 {
 		padding: 60px 24px;
 		&__wrapper1 {

@@ -100,7 +100,7 @@
 		}
 	}
 }
-@media (max-width: 960px) {
+@media (min-width: 960px) and (max-width: 1366px) {
 	.content11 {
 		padding: 0px 40px 80px;
 
@@ -111,7 +111,7 @@
 		}
 	}
 }
-@media (max-width: 390px) {
+@media (max-width: 959px) {
 	.content11 {
 		padding: 60px 24px;
 		&__wrapper {

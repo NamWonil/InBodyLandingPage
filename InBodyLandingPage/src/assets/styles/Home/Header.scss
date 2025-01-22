@@ -395,7 +395,7 @@
 							}
 						}
 					}
-					@media (max-width: 390px) {
+					@media (max-width: 959px) {
 						&__item2 {
 							display: none;
 						}
@@ -553,7 +553,7 @@ button:hover {
 	height: 46px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1366px) {
 	.banner {
 		&__wrapper {
 			padding: 12px 24px;
@@ -579,9 +579,10 @@ button:hover {
 		}
 	}
 }
-@media (max-width: 390px) {
+@media (max-width: 959px) {
 	.banner {
 		&__wrapper {
+			padding: 8px 10px 8px 24px;
 			&__bottom {
 				height: 64px;
 			}
