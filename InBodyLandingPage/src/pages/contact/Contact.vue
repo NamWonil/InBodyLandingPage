@@ -165,7 +165,7 @@ const fetchData = async () => {
     }
 }
 onMounted(() => {
-    isConsult.value = route.query.type === ''
+    isConsult.value = route.query.type === 'consult'
     formData.value.subject = isConsult.value ? t('subjectConsult') : t('subjectDownload');
     if (!isConsult.value) {
         formData.value.curious = '';
