@@ -226,14 +226,16 @@
 			gap: 32px;
 			&__inner {
 				width: calc(280 / 342 * 100%);
+				gap: 4px;
 				&__text1 {
-					font-size: 16px;
+					font-size: 14px;
 				}
 				&__text2 {
-					font-size: 28px;
+					font-size: 24px;
 				}
 				&__text3 {
-					font-size: 16px;
+					margin-top: 20px;
+					font-size: 14px;
 				}
 			}
 			&__img {

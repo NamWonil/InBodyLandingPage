@@ -109,6 +109,26 @@
 		}
 	}
 }
+@media (max-width: 1366px) {
+	.content8 {
+		padding: 140px 80px;
+		&__wrapper {
+			&__box1 {
+				&__txt1 {
+					font-size: 58px;
+				}
+				&__txt2 {
+					font-size: 16px;
+				}
+				&__btn {
+					&__txt {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}
 @media (max-width: 959px) {
 	.content8 {
 		padding: 40px 24px;

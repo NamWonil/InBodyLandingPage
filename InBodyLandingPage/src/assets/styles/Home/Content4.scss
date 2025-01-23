@@ -94,12 +94,19 @@
 }
 @media (min-width: 960px) and (max-width: 1366px) {
 	.content4 {
-		padding: 0px 40px 80px;
+		padding: 80px 80px;
 
 		&__wrapper {
 			&__box1 {
-				padding-top: 40px;
 				gap: 40px;
+				&__inner {
+					&__text {
+						font-size: 28px;
+					}
+				}
+				&__text {
+					font-size: 16px;
+				}
 			}
 		}
 	}
@@ -109,7 +116,9 @@
 		padding: 60px 24px;
 		&__wrapper {
 			&__box1 {
+				gap: 24px;
 				&__inner {
+					gap: 24px;
 					&__text {
 						font-size: 24px;
 					}

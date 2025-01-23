@@ -8,10 +8,10 @@
                 </p>
             </div>
             <div class="content1__wrapper__box2">
-                <!-- <button class="content1__wrapper__box2__btn1" @click="goToConsult">
+                <button class="content1__wrapper__box2__btn1" @click="goToConsult">
                     <img src="@/assets/images/home/earPhone.svg" alt="" style="width: 1.4vw;height: auto">
                     <span class="content1__wrapper__box2__btn1__text">{{ $t('consult') }}</span>
-                </button> -->
+                </button>
                 <button class="content1__wrapper__box2__btn2" @click="login">
                     <span class="content1__wrapper__box2__btn2__text">{{ $t('freeUse') }}</span>
                 </button>

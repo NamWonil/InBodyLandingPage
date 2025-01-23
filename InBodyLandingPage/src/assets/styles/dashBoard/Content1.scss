@@ -34,7 +34,7 @@
 				img {
 					/* icon_Files */
 					width: 24px;
-					height: 24px;
+					height: auto;
 				}
 			}
 			&__title {
@@ -100,8 +100,8 @@
 }
 @media (max-width: 959px) {
 	.wrapper {
-		padding: 60px 24px 100px;
-		gap: 32px;
+		padding: 132px 24px 60px;
+		gap: 37px;
 		&__box {
 			&__inner1 {
 				&__title {
@@ -118,7 +118,7 @@
 			}
 		}
 		&__img {
-			width: calc(342 / 390 * 100%);
+			width: 100%;
 		}
 	}
 }

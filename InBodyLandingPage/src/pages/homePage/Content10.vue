@@ -8,10 +8,10 @@
                 $t('content10Text2') : $t('content10Text6') }}</p>
         </div>
         <div class="content10__wrapper2">
-            <!-- <button class="content10__wrapper2__button1" @click="goToConsult"> <img
+            <button class="content10__wrapper2__button1" @click="goToConsult"> <img
                     src="@/assets/images/home/earPhone.svg" alt="" style="width: 1.4vw;height: auto"><span
                     class="content10__wrapper2__button1__txt">{{
-                        $t('content10Text3') }}</span></button> -->
+                        $t('content10Text3') }}</span></button>
             <button class="content10__wrapper2__button2" @click="login"><span
                     class="content10__wrapper2__button2__txt">{{
                         $t('content10Text4') }}</span></button>

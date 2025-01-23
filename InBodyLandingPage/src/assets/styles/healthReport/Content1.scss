@@ -97,9 +97,13 @@
 }
 @media (max-width: 959px) {
 	.wrapper {
+		padding: 132px 24px;
 		gap: 60px;
 		&__box {
+			padding: 0px 24px;
+			gap: 32px;
 			&__inner1 {
+				gap: 12px;
 				&__title {
 					font-size: 16px;
 				}
@@ -114,7 +118,7 @@
 			}
 		}
 		&__img {
-			width: calc(342 / 390 * 100%);
+			width: 100%;
 		}
 	}
 }

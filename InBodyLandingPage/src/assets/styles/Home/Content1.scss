@@ -25,7 +25,7 @@
 				font-family: 'Montserrat';
 				font-style: normal;
 				font-weight: bold;
-				font-size: 60px;
+				font-size: 52px;
 				line-height: 132%;
 				text-align: center;
 				color: #1c1d21;
@@ -97,8 +97,16 @@
 }
 @media (min-width: 960px) and (max-width: 1365px) {
 	.content1 {
-		padding: 120px 40px 100px;
+		padding: 172px 80px 140px;
 		&__wrapper {
+			&__box1 {
+				&__text1 {
+					font-size: 48px;
+				}
+				&__text2 {
+					font-size: 18px;
+				}
+			}
 			&__box2 {
 				&__btn1 {
 					border: 0.0625rem solid #e2e4e9;

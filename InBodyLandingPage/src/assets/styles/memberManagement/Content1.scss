@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 172px 140px 160px;
+	padding: 172px 143px 160px;
 	gap: 100px;
 	width: 100%;
 	background: #ffffff;
@@ -34,7 +34,7 @@
 				img {
 					/* icon_Files */
 					width: 24px;
-					height: 24px;
+					height: auto;
 				}
 			}
 			&__title {
@@ -104,10 +104,11 @@
 }
 @media (max-width: 959px) {
 	.wrapper {
-		padding: 133px 24px;
+		padding: 132px 24px 60px;
 		gap: 32px;
 		&__box1 {
 			&__inner1 {
+				gap: 12px;
 				&__title {
 					font-size: 16px;
 				}
@@ -119,6 +120,12 @@
 				&__text2 {
 					font-size: 16px;
 				}
+			}
+		}
+		&__box2 {
+			width: 100%;
+			&__img {
+				width: 100%;
 			}
 		}
 	}

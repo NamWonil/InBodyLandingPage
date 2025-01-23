@@ -84,7 +84,7 @@
 }
 @media (max-width: 959px) {
 	.wrapper {
-		padding: 60px 24px;
+		padding: 132px 24px 60px;
 		gap: 32px;
 		&__box1 {
 			&__inner {
@@ -100,8 +100,9 @@
 				height: auto;
 			}
 		}
-		&__box2 {
-			width: calc(342 / 390 * 100%);
+
+		&__img {
+			width: 100%;
 		}
 	}
 }

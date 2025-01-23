@@ -17,7 +17,6 @@
 		&__text1 {
 			//봐야 할 데이터만 모아체계적으로
 			width: 100%;
-			min-height: 120px;
 			font-family: 'Pretendard';
 			font-style: normal;
 			font-weight: 700;
@@ -108,13 +107,13 @@
 @media (max-width: 959px) {
 	.wrapper {
 		gap: 60px;
-		padding: 80px 24px 60px;
+		padding: 80px 24px;
 		&__box1 {
 			&__text1 {
-				font-size: 28px;
+				font-size: 24px;
 			}
 			&__text2 {
-				font-size: 16px;
+				font-size: 14px;
 			}
 		}
 		&__box2 {
@@ -127,7 +126,7 @@
 						font-size: 18px;
 					}
 					&__text2 {
-						font-size: 13px;
+						font-size: 14px;
 					}
 				}
 			}

@@ -102,21 +102,31 @@
 }
 @media (min-width: 960px) and (max-width: 1366px) {
 	.content5 {
-		padding: 0px 40px 80px;
+		padding: 80px 80px;
 
 		&__wrapper {
 			&__box1 {
 				gap: 40px;
+				&__inner {
+					&__txt {
+						font-size: 28px;
+					}
+				}
+				&__txt {
+					font-size: 16px;
+				}
 			}
 		}
 	}
 }
 @media (max-width: 959px) {
 	.content5 {
-		padding: 60px 24px;
+		padding: 0px 24px 60px;
 		&__wrapper {
 			&__box1 {
+				gap: 24px;
 				&__inner {
+					gap: 24px;
 					&__txt {
 						font-size: 24px;
 					}

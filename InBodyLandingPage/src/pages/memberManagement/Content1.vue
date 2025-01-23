@@ -3,7 +3,7 @@
         <div class="wrapper__box1">
             <div class="wrapper__box1__inner1">
                 <div class="wrapper__box1__inner1__item">
-                    <img src="@/assets/images/healthReport/files.png" alt="">
+                    <img src="@/assets/images/memberManagement/member.png" alt="">
                 </div>
                 <p class="wrapper__box1__inner1__title">
                     Member management

@@ -4,7 +4,6 @@
 	flex-direction: column;
 	align-items: center;
 	padding: 160px 143px 80px;
-	gap: 80px;
 	background: #ffffff;
 	&__wrapper {
 		display: flex;
@@ -81,21 +80,31 @@
 }
 @media (min-width: 960px) and (max-width: 1366px) {
 	.content3 {
-		padding: 160px 40px 80px;
+		padding: 80px 80px;
 
 		&__wrapper {
 			&__box1 {
 				gap: 40px;
+				&__inner {
+					&__text {
+						font-size: 28px;
+					}
+					&__txt {
+						font-size: 16px;
+					}
+				}
 			}
 		}
 	}
 }
 @media (max-width: 959px) {
 	.content3 {
-		padding: 60px 24px;
+		padding: 0px 24px 60px;
 		&__wrapper {
 			&__box1 {
+				gap: 24px;
 				&__inner {
+					gap: 24px;
 					&__text {
 						font-size: 24px;
 					}
