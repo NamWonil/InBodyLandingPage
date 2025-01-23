@@ -231,6 +231,10 @@ in one place.`,
 		'@/assets/images/contact/consultation_en.png',
 		import.meta.url
 	).href,
+	imgConsultTitleNarrow: new URL(
+		'@/assets/images/contact/consultation_390.png',
+		import.meta.url
+	).href,
 	inputList: [
 		{
 			title: 'Business Name*',
@@ -265,11 +269,15 @@ in one place.`,
 	checkboxTitle: 'What are you curious about?',
 	checkboxList: [
 		{
-			title: '[Required] Privacy Policy Agreement',
+			option: '[Required] ',
+			text1: 'Privacy Policy',
+			text2: ' Agreement',
 			img: new URL('@/assets/images/contact/checkbox.svg', import.meta.url).href
 		},
 		{
-			title: '[Optional] Agreement to Receive Marketing Information',
+			option: '[Optional] ',
+			text1: 'Receive Marketing Information',
+			text2: ' Agreement',
 			img: new URL('@/assets/images/contact/checkbox.svg', import.meta.url).href
 		}
 	],

@@ -9,7 +9,8 @@
                 </p>
             </div>
             <div class="wrapper__container__box2">
-                <img :src="!isConsult ? $t('imgDownloadTitle') : $t('imgConsultTitle')">
+                <img
+                    :src="!isConsult ? $t('imgDownloadTitle') : isNarrow ? $t('imgConsultTitleNarrow') : $t('imgConsultTitle')">
             </div>
             <div class="wrapper__container__box3">
                 <div class="wrapper__container__box3__inner1">
@@ -52,7 +53,16 @@
                         :key="index">
                         <input type="checkbox" class="wrapper__container__box3__inner2__child__chk"
                             v-model="checkedList[index]" />
-                        <span class="wrapper__container__box3__inner2__child__text">{{ item.title }}</span>
+                        <div>
+                            <span class="wrapper__container__box3__inner2__child__text">{{ item.option }}</span>
+                            <span class="wrapper__container__box3__inner2__child__text"
+                                :class="{ underline: index === 0 || locale === 'ko', hover: index === 0 || locale === 'ko' }">{{
+                                    item.text1
+                                }}</span>
+                            <span class="wrapper__container__box3__inner2__child__text"
+                                :class="{ underline: index === 1 && locale === 'en', hover: index === 1 && locale === 'en' }">{{
+                                    item.text2 }}</span>
+                        </div>
 
                     </div>
                 </div>
@@ -71,12 +81,12 @@
     </div>
 </template>
 <script lang="ts" setup name="ServiceDownload">
-import { computed, ref, onMounted, type ComputedRef, type Ref, watch } from 'vue'
+import { computed, ref, onMounted, type ComputedRef, type Ref, watch, inject } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import axios from 'axios'
-
-const { t } = useI18n()
+const isNarrow = inject('isNarrow');
+const { t, locale } = useI18n()
 const route = useRoute()
 const isConsult = ref(false);
 const loading = ref(false);
@@ -155,7 +165,7 @@ const fetchData = async () => {
     }
 }
 onMounted(() => {
-    isConsult.value = route.query.type === 'consult'
+    isConsult.value = route.query.type === ''
     formData.value.subject = isConsult.value ? t('subjectConsult') : t('subjectDownload');
     if (!isConsult.value) {
         formData.value.curious = '';
@@ -204,11 +214,15 @@ const radioList: ComputedRef = computed(() =>
 
 let checkboxList = computed(() => {
     return [{
-        title: t('checkboxList.0.title'),
+        option: t('checkboxList.0.option'),
+        text1: t('checkboxList.0.text1'),
+        text2: t('checkboxList.0.text2'),
         img: t('checkboxList.0.img'),
     },
     {
-        title: t('checkboxList.1.title'),
+        option: t('checkboxList.1.option'),
+        text1: t('checkboxList.1.text1'),
+        text2: t('checkboxList.1.text2'),
         img: t('checkboxList.1.img'),
     }
     ];

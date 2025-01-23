@@ -240,6 +240,10 @@ export default {
 		'@/assets/images/contact/consultation_ko.png',
 		import.meta.url
 	).href,
+	imgConsultTitleNarrow: new URL(
+		'@/assets/images/contact/consultation_390.png',
+		import.meta.url
+	).href,
 	inputList: [
 		{
 			title: '사업장 이름*',
@@ -275,11 +279,15 @@ export default {
 	textareaPlaceholder: '자세히 안내받고 싶은 내용을 입력해주세요.',
 	checkboxList: [
 		{
-			title: '[필수] 개인정보 처리방침 동의',
+			option: '[필수] ',
+			text1: '개인정보 처리방침',
+			text2: ' 동의',
 			img: new URL('@/assets/images/contact/checkbox.svg', import.meta.url).href
 		},
 		{
-			title: '[선택] 마케팅 정보 수신 동의',
+			option: '[선택] ',
+			text1: '마케팅 정보 수신',
+			text2: ' 동의',
 			img: new URL('@/assets/images/contact/checkbox.svg', import.meta.url).href
 		}
 	],
