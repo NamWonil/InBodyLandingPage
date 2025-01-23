@@ -9,7 +9,7 @@
             </div>
             <div class="content1__wrapper__box2">
                 <button class="content1__wrapper__box2__btn1" @click="goToConsult">
-                    <img src="@/assets/images/home/earPhone.svg" alt="" style="width: 1.4vw;height: auto">
+                    <img src="@/assets/images/home/earPhone.svg" alt="" style="width: 20px;height: auto">
                     <span class="content1__wrapper__box2__btn1__text">{{ $t('consult') }}</span>
                 </button>
                 <button class="content1__wrapper__box2__btn2" @click="login">
