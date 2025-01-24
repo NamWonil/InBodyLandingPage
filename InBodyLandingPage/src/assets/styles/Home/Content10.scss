@@ -107,5 +107,20 @@
 				font-size: 14px;
 			}
 		}
+		&__wrapper2 {
+			&__button1 {
+				border: 0.0625rem solid #e2e4e9;
+				padding: 13px 18px;
+				&__txt {
+					font-size: 16px;
+				}
+			}
+			&__button2 {
+				padding: 13px 18px;
+				&__txt {
+					font-size: 16px;
+				}
+			}
+		}
 	}
 }

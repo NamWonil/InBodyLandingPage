@@ -524,12 +524,14 @@
 							width: 100%;
 							border-radius: 8px;
 							border: none;
+							line-height: 24px;
+							font-size: 18px;
 						}
 						&__consult {
 							background: #ffffff;
 							color: #1c1d21;
-							gap: 2px;
-							border: 1px solid #e2e4e9;
+							gap: 8px;
+							border: 1px solid #e2e4e9 !important;
 						}
 						&__freeuse {
 							background: #cb4d61;
@@ -582,9 +584,7 @@ button:hover {
 	.banner {
 		&__wrapper {
 			padding: 8px 10px 8px 24px;
-			&__bottom {
-				height: 64px;
-			}
+
 			&__mobile {
 				height: 100%;
 				&__box2 {

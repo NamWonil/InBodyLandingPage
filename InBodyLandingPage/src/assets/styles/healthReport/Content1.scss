@@ -31,6 +31,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				padding: 12px;
 				img {
 					width: 24px;
 					height: auto;
@@ -106,6 +107,12 @@
 				gap: 12px;
 				&__title {
 					font-size: 16px;
+				}
+				&__item {
+					padding: 8px;
+					img {
+						width: 16px;
+					}
 				}
 			}
 			&__inner2 {

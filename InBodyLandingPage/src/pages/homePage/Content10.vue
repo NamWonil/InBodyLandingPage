@@ -9,7 +9,7 @@
         </div>
         <div class="content10__wrapper2">
             <button class="content10__wrapper2__button1" @click="goToConsult"> <img
-                    src="@/assets/images/home/earPhone.svg" alt="" style="width: 1.4vw;height: auto"><span
+                    src="@/assets/images/home/earPhone.svg" alt="" style="width: 20px;height: auto"><span
                     class="content10__wrapper2__button1__txt">{{
                         $t('content10Text3') }}</span></button>
             <button class="content10__wrapper2__button2" @click="login"><span
