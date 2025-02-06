@@ -12,7 +12,7 @@
                     <img src="@/assets/images/home/earPhone.svg" alt="" style="width: 20px;height: auto">
                     <span class="content1__wrapper__box2__btn1__text">{{ $t('consult') }}</span>
                 </button>
-                <button class="content1__wrapper__box2__btn2" @click="login">
+                <button class="content1__wrapper__box2__btn2" @click="goToFreeUse">
                     <span class="content1__wrapper__box2__btn2__text">{{ $t('freeUse') }}</span>
                 </button>
             </div>
@@ -59,16 +59,8 @@ const goToConsult = () => {
         }
     })
 }
-const goToLogin = async () => {
-    let url: string = ''
-    if (locale.value === 'ko') {
-        url = 'https://kr.v2.lookinbody.com'
-    } else if (locale.value === 'en') {
-        url = 'https://usa.lookinbody.com'
-    } else {
-        url = 'https://kr.v2.lookinbody.com'
-    }
-    window.open(url);
+const goToFreeUse = () => {
+    router.push('/freeUse');
 }
 </script>
 <style lang="scss" scoped>

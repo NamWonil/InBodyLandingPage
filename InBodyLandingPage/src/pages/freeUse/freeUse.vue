@@ -2,15 +2,14 @@
     <div class="wrapper">
         <form class="wrapper__container" @submit.prevent="handleSubmit">
             <div class="wrapper__container__box1">
-                <p class="wrapper__container__box1__title">{{ !isConsult ? $t('contactDownloadTitle') :
-                    $t('contactConsultTitle') }}</p>
+                <p class="wrapper__container__box1__title">{{ $t('freeUseTitle') }}</p>
                 <p class="wrapper__container__box1__text">
-                    {{ !isConsult ? $t('contactDownloadText') : $t('contactConsultText') }}
+                    {{ $t('freeUseText1') }}
                 </p>
             </div>
             <div class="wrapper__container__box2">
-                <img
-                    :src="!isConsult ? $t('imgDownloadTitle') : isNarrow ? $t('imgConsultTitleNarrow') : $t('imgConsultTitle')">
+                <img :src="isTablet ? $t('imgFreeUseTitle960') : isNarrow ? $t('imgFreeUseTitle390') : $t('imgFreeUseTitle')"
+                    alt="freeUse">
             </div>
             <div class="wrapper__container__box3">
                 <div class="wrapper__container__box3__inner1">
@@ -20,12 +19,16 @@
                             <span class="highlight">{{
                                 item.title.slice(-1) }}</span>
                         </p>
+                        <div class="wrapper__container__box3__inner1__input__box">
+                            <input :type="item.type" class="wrapper__container__box3__inner1__input__box__input"
+                                :placeholder="item.placeholder" v-model="formData[item.model]" required
+                                :ref="`input${index}`" />
+                            <img src="@/assets/images/Home/search.svg" alt="search" @click="handleSearch"
+                                v-if="item.model === 'address'">
+                        </div>
 
-                        <input :type="item.type" class="wrapper__container__box3__inner1__input__input"
-                            :placeholder="item.placeholder" v-model="formData[item.model]" required
-                            :ref="`input${index}`" />
                     </div>
-                    <div class="wrapper__container__box3__inner1__childDownload" v-if="!isConsult">
+                    <div class="wrapper__container__box3__inner1__childDownload">
                         <p class="wrapper__container__box3__inner1__childDownload__title">
                             {{ $t('radioTitle').slice(0, -1) }}<span class="highlight">
                                 {{ $t('radioTitle').slice(-1) }}</span>
@@ -39,13 +42,6 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="wrapper__container__box3__inner1__childQuestion" v-if="isConsult">
-                        <p class="wrapper__container__box3__inner1__childQuestion__text">
-                            {{ $t('checkboxTitle') }}
-                        </p>
-                        <textarea class="wrapper__container__box3__inner1__childQuestion__textarea"
-                            v-model="formData.curious" :placeholder="$t('textareaPlaceholder')" required />
                     </div>
                 </div>
                 <div class="wrapper__container__box3__inner2">
@@ -69,10 +65,7 @@
             </div>
 
             <button class="wrapper__container__button" :disabled="!allChecked && !loading"
-                :class="{ active: allChecked && !loading }">{{
-                    !isConsult ?
-                        $t('buttonDownloadText') :
-                        $t('buttonConsultText') }}</button>
+                :class="{ active: allChecked && !loading }">{{ $t('buttonFreeUseText') }}</button>
 
         </form>
         <div v-if="result" class="result">
@@ -80,31 +73,34 @@
         </div>
     </div>
 </template>
-<script lang="ts" setup name="ServiceDownload">
+<script lang="ts" setup name="FreeUse">
 import { computed, ref, onMounted, type ComputedRef, type Ref, watch, inject } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import axios from 'axios'
+const isTablet = inject('isTablet');
 const isNarrow = inject('isNarrow');
 const { t, locale } = useI18n()
 const route = useRoute()
-const isConsult = ref(false);
 const loading = ref(false);
 const result = ref(false);
 const sendSuccess = ref(false);
 const formData: Ref<{ [key: string]: string }> = ref({
     subject: '',
-    bossname: '',
-    name: '',
+    companyName: '',
+    contactInfo: '',
     email: '',
-    phone: '',
-    curious: '',
+    bossName: '',
+    address: '',
+    isInbodyReserve: 'Y',
 })
-const needConsultation = ref('y');
+const handleSearch = () => {
+    console.log('handleSearch')
+}
 const checkedList = ref([false, false]);
 const allChecked = computed(() => {
-    return ((checkedList.value.every((isChecked) => isChecked)) && isConsult.value) ||
-        (needConsultation.value === 'y' && !isConsult.value && (checkedList.value.every((isChecked) => isChecked)))
+    return ((checkedList.value.every((isChecked) => isChecked))
+    )
 });
 
 const inputs = ref<HTMLInputElement[]>([]);
@@ -120,12 +116,12 @@ const handleSelect = (index: number) => {
     if (index === 0) {
         radioData.value[0].img = 'radioList.0.img';
         radioData.value[1].img = 'radioList.1.img';
-        needConsultation.value = 'y';
+        formData.value.isInbodyReserve = 'y';
 
     } else {
         radioData.value[0].img = 'radioList.1.img';
         radioData.value[1].img = 'radioList.0.img';
-        needConsultation.value = 'n';
+        formData.value.isInbodyReserve = 'n';
     }
 }
 const handleSubmit = () => {
@@ -135,8 +131,8 @@ const handleSubmit = () => {
 const fetchData = async () => {
     try {
         loading.value = true;
-        formData.value.subject = isConsult.value ? t('subjectConsult') : t('subjectDownload');
-        await axios.post('http://localhost:5000/Email/Contact', JSON.stringify(formData.value), {
+        formData.value.subject = t('subjectFreeUse');
+        await axios.post('http://localhost:5000/Email/FreeUse', JSON.stringify(formData.value), {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -165,44 +161,43 @@ const fetchData = async () => {
 
     }
 }
-onMounted(() => {
-    isConsult.value = route.query.type === 'consult'
-    if (!isConsult.value) {
-        formData.value.curious = '';
-    }
-    console.log('isConsult:', route.query.type);
-});
 let inputList: ComputedRef = computed(() => {
     return [{
-        title: t('inputList.0.title'),
-        placeholder: t('inputList.0.placeholder'),
-        model: 'bossname',
+        title: t('freeUseInputList.0.title'),
+        placeholder: t('freeUseInputList.0.placeholder'),
+        model: 'companyName',
         type: 'text',
     }, {
-        title: t('inputList.1.title'),
-        placeholder: t('inputList.1.placeholder'),
-        model: 'name',
+        title: t('freeUseInputList.1.title'),
+        placeholder: t('freeUseInputList.1.placeholder'),
+        model: 'contactInfo',
         type: 'text',
     }, {
-        title: t('inputList.2.title'),
-        placeholder: t('inputList.2.placeholder'),
+        title: t('freeUseInputList.2.title'),
+        placeholder: t('freeUseInputList.2.placeholder'),
         model: 'email',
         type: 'email',
     }, {
-        title: t('inputList.3.title'),
-        placeholder: t('inputList.3.placeholder'),
-        model: 'phone',
-        type: 'tel',
-    }];
+        title: t('freeUseInputList.3.title'),
+        placeholder: t('freeUseInputList.3.placeholder'),
+        model: 'bossName',
+        type: 'text',
+    }, {
+        title: t('freeUseInputList.4.title'),
+        placeholder: t('freeUseInputList.4.placeholder'),
+        model: 'address',
+        type: 'text',
+    }
+    ];
 });
 const radioData = ref([
     {
-        title: 'radioList.0.title',
-        img: 'radioList.0.img',
+        title: 'freeUseRadioList.0.title',
+        img: 'freeUseRadioList.0.img',
     },
     {
-        title: 'radioList.1.title',
-        img: 'radioList.1.img',
+        title: 'freeUseRadioList.1.title',
+        img: 'freeUseRadioList.1.img',
     },
 ]);
 const radioList: ComputedRef = computed(() =>
@@ -230,5 +225,5 @@ let checkboxList = computed(() => {
 
 </script>
 <style lang="scss" scoped>
-@use '@/assets/styles/contact/contact.scss';
+@use '@/assets/styles/freeUse/freeUse.scss';
 </style>

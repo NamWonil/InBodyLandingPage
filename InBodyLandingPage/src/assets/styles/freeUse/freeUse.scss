@@ -89,17 +89,33 @@
 						color: #34363e;
 						display: flex;
 					}
-					&__input {
+					&__box {
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						justify-content: space-between;
 						width: 100%;
-						border: 1px solid #e2e4e9;
 						border-radius: 9px;
-						font-family: 'Pretendard';
-						font-style: normal;
-						font-weight: 400;
-						font-size: 16px;
-						line-height: 48px;
-						text-indent: 14px;
+						padding: 15px 15px 15px 14px;
+						border: 1px solid #e2e4e9;
+						&__input {
+							width: 100%;
+							font-family: 'Pretendard';
+							font-style: normal;
+							font-weight: 400;
+							font-size: 16px;
+							line-height: 22px;
+							border: none;
+						}
+						img {
+							width: 18px;
+							height: auto;
+							&:hover {
+								cursor: pointer;
+							}
+						}
 					}
+
 					&__error-message {
 						color: red;
 						font-size: 8px;

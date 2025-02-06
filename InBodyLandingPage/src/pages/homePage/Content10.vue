@@ -12,7 +12,7 @@
                     src="@/assets/images/home/earPhone.svg" alt="" style="width: 20px;height: auto"><span
                     class="content10__wrapper2__button1__txt">{{
                         $t('content10Text3') }}</span></button>
-            <button class="content10__wrapper2__button2" @click="login"><span
+            <button class="content10__wrapper2__button2" @click="goToFreeUse"><span
                     class="content10__wrapper2__button2__txt">{{
                         $t('content10Text4') }}</span></button>
 
@@ -62,6 +62,9 @@ const goToConsult = () => {
             type: 'consult'
         }
     })
+}
+const goToFreeUse = () => {
+    router.push('/freeUse');
 }
 //#endregion
 </script>

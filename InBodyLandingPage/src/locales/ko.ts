@@ -247,19 +247,19 @@ export default {
 	inputList: [
 		{
 			title: '사업장 이름*',
-			placeholder: '인바디'
+			placeholder: '회사명을 입력해 주세요'
 		},
 		{
 			title: '담당자 이름*',
-			placeholder: '김바디'
+			placeholder: '담당자 이름을 입력해 주세요'
 		},
 		{
 			title: '이메일*',
-			placeholder: 'inbody@inbody.com'
+			placeholder: '이메일 주소를 입력해 주세요'
 		},
 		{
 			title: '연락처*',
-			placeholder: '010-1234-5678'
+			placeholder: '연락처를 입력해 주세요'
 		}
 	],
 	radioTitle: 'LookinBody 도입을 계획 중이시라면, 상담을 받아보시겠어요?*',
@@ -299,6 +299,67 @@ export default {
 	subjectDownload: 'LookinBody 서비스 소개서 다운로드',
 	//#endregion contact
 
+	//#region freeUse
+	subjectFreeUse: 'LookinBody 무료 데모 신청하기',
+	freeUseTitle: `LookinBody
+	무료 데모 신청하기`,
+	freeUseText1: `서비스에 대한 문의나 추가 정보가 필요하다면 언제든 편하게 연락해주세요. 담당 컨설턴트가 빠르고 친절하게 답변드리겠습니다!`,
+	imgFreeUseTitle: new URL(
+		'@/assets/images/freeUse/freeUse_ko.png',
+		import.meta.url
+	).href,
+	imgFreeUseTitle960: new URL(
+		'@/assets/images/freeUse/freeUse_960.png',
+		import.meta.url
+	).href,
+	imgFreeUseTitle390: new URL(
+		'@/assets/images/freeUse/freeUse_390.png',
+		import.meta.url
+	).href,
+	freeUseInputList: [
+		{
+			title: '회사명*',
+			placeholder: '회사명을 입력해 주세요'
+		},
+		{
+			title: '연락처*',
+			placeholder: '연락처를 입력해 주세요'
+		},
+		{
+			title: '이메일*',
+			placeholder: '이메일 주소를 입력해 주세요'
+		},
+		{
+			title: '담당자 이름*',
+			placeholder: '담당자 이름을 입력해 주세요'
+		},
+		{
+			title: '주소*',
+			placeholder: '서울시 강남구 언주로 625'
+		}
+	],
+	freeUseRadioTitle: '인바디 보유 여부*',
+	freeUseRadioList: [
+		{
+			title: '예',
+			img: new URL('@/assets/images/contact/checkboxY.svg', import.meta.url)
+				.href
+		},
+		{
+			title: '아니오',
+			img: new URL('@/assets/images/contact/checkboxN.svg', import.meta.url)
+				.href
+		}
+	],
+
+	buttonFreeUseText: '무료로 시작하기',
+	//#endregion freeUse
+	//#region demo
+	demoTitle: 'LookinBody 데모 신청',
+	demoText1: '인바디 보유 여부*',
+	demobtn1: '닫기',
+	demobtn2: '데모 신청',
+	//#endregion demo
 	//#region healthReport
 	healthReportTitle: '어려운 건강 데이터, 한 눈에!',
 	healthReportText1: `쉽게 이해하고 활용할 수 있는 직관적인 분석 리포트`,
@@ -648,9 +709,9 @@ export default {
 			).href
 		},
 		{
-			title: '회원 일괄 등록',
-			subTitle: '엑셀 업로드로 한 번에',
-			content: `많은 회원을 한 번에 등록할 땐 엑셀로 일괄 추가하기 기능을 활용해 보세요.`,
+			title: '친절한 용어 설명',
+			subTitle: '전문 지식이 없어도 괜찮아요',
+			content: `간단한 화면과 시각화된 설명을 통해 누구나 이해하기 쉽고, 정확한 상담이 가능합니다.`,
 			img: new URL(
 				'@/assets/images/InBodyTouch/imgContent2_3.png',
 				import.meta.url

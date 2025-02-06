@@ -5,7 +5,7 @@ import DashBoard from '@/pages/dashBoard/DashBoard.vue'
 import InBodyTouch from '@/pages/InBodyTouch/InBodyTouch.vue'
 import MemberManagement from '@/pages/memberManagement/MemberManagement.vue'
 import Contact from '@/pages/contact/Contact.vue'
-
+import FreeUse from '@/pages/freeUse/freeUse.vue'
 const router = createRouter({
 	history: createWebHistory(),
 	routes: [
@@ -36,6 +36,10 @@ const router = createRouter({
 		{
 			path: '/serviceDownload',
 			component: Contact
+		},
+		{
+			path: '/freeUse',
+			component: FreeUse
 		}
 	],
 	scrollBehavior(to, from, savedPosition) {

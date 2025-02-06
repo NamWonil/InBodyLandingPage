@@ -238,19 +238,19 @@ in one place.`,
 	inputList: [
 		{
 			title: 'Business Name*',
-			placeholder: 'Inbody'
+			placeholder: 'Please enter the business name.'
 		},
 		{
-			title: 'Name*',
-			placeholder: 'Kim body'
+			title: `Manager's Name*`,
+			placeholder: 'Please enter the name of the person in charge.'
 		},
 		{
 			title: 'Email *',
-			placeholder: 'id@company.com'
+			placeholder: 'Please enter your email address'
 		},
 		{
-			title: 'Phone number*',
-			placeholder: '010-0000-0000'
+			title: 'Contact information*',
+			placeholder: 'Please enter your contact information.'
 		}
 	],
 	radioTitle: `If you're thinking about adopting LookinBody, would you like a consultation?*`,
@@ -291,6 +291,65 @@ in one place.`,
 	subjectDownload: 'LookinBody Service Introduction Download',
 	//#endregion contact
 
+	//#region freeUse
+	subjectFreeUse: 'Request a Free Demo for LookinBody',
+	freeUseTitle: `Request a Free Demo for LookinBody`,
+	freeUseText1: `Apply for a free LookinBody demo right now and experience it for yourself.`,
+	imgFreeUseTitle: new URL(
+		'@/assets/images/freeUse/freeUse_ko.png',
+		import.meta.url
+	).href,
+	imgFreeUseTitle960: new URL(
+		'@/assets/images/freeUse/freeUse_960.png',
+		import.meta.url
+	).href,
+	imgFreeUseTitle390: new URL(
+		'@/assets/images/freeUse/freeUse_390.png',
+		import.meta.url
+	).href,
+	freeUseInputList: [
+		{
+			title: 'Business name*',
+			placeholder: 'Please enter the business name.'
+		},
+		{
+			title: 'Contact information*',
+			placeholder: 'Please enter the name of the person in charge.'
+		},
+		{
+			title: 'Email*',
+			placeholder: 'Please enter your email address'
+		},
+		{
+			title: `Manager's Name*`,
+			placeholder: 'Please enter the name of the person in charge.'
+		},
+		{
+			title: 'Address*',
+			placeholder: '625 Eonju-ro, Gangnam-gu, Seoul'
+		}
+	],
+	freeUseRadioTitle: 'Do you have InBody equipment?*',
+	freeUseRadioList: [
+		{
+			title: 'Yes',
+			img: new URL('@/assets/images/contact/checkboxY.svg', import.meta.url)
+				.href
+		},
+		{
+			title: 'No',
+			img: new URL('@/assets/images/contact/checkboxN.svg', import.meta.url)
+				.href
+		}
+	],
+	buttonFreeUseText: 'Start for free',
+	//#endregion freeUse
+	//#region demo
+	demoTitle: 'Start Free trial of LookinBody',
+	demoText1: 'Do you have InBody equipment?*',
+	demobtn1: 'Close',
+	demobtn2: 'Start free trial',
+	//#endregion demo
 	//#region healthReport
 	healthReportTitle: 'Difficult Health Data at a Glance!',
 	healthReportText1:

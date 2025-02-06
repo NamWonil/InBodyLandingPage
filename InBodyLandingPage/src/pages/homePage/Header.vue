@@ -97,7 +97,7 @@
                                     <span class="banner__wrapper__bottom__box__section2__item1__inner__button1__text">{{
                                         t('consult') }}</span></button>
                                 <button class="banner__wrapper__bottom__box__section2__item1__inner__button2"
-                                    @click="goToLogin"><span
+                                    @click="goToFreeUse"><span
                                         class="banner__wrapper__bottom__box__section2__item1__inner__button2__text">{{
                                             t('freeUse') }}</span></button>
                             </div>
@@ -164,7 +164,7 @@
                                 <img src="@/assets/images/home/earPhone.svg" alt="" style="width: 20px;height: auto">
                                 <p>{{ t('consult') }}</p>
                             </button>
-                            <button class="banner__wrapper__mobile__box2__inner__item4__freeuse" @click="goToLogin">
+                            <button class="banner__wrapper__mobile__box2__inner__item4__freeuse" @click="goToFreeUse">
                                 <p>{{ t('freeUse') }}</p>
                             </button>
                             <button class="banner__wrapper__mobile__box2__inner__item4__login" @click="goToLogin">
@@ -246,6 +246,10 @@ const goToConsult = () => {
             type: 'consult'
         }
     })
+    closeMenu()
+}
+const goToFreeUse = () => {
+    router.push('/freeUse')
     closeMenu()
 }
 const goToMemberManagement = () => {
