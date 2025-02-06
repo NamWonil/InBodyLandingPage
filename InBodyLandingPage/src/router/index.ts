@@ -7,7 +7,7 @@ import MemberManagement from '@/pages/memberManagement/MemberManagement.vue'
 import Contact from '@/pages/contact/Contact.vue'
 import FreeUse from '@/pages/freeUse/freeUse.vue'
 const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHistory('/InBodyLandingPage/'),
 	routes: [
 		{
 			path: '/',
